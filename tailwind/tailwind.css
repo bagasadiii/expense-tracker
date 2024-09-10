@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .table-costum {
+        @apply text-center px-2 py-2;
+    }
+    .table-income {
+        @apply bg-green-300;
+    }
+    .table-expense {
+        @apply bg-red-300;
+    }
+}

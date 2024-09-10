@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header start -->
+    <header class="bg-slate-300 p-3">
+        Expense Tracker
+    </header>
+    <!-- Header end -->
+    <!-- Hero Start -->
+    <section class="container">
+        <!-- Summary start -->
+        <div class="container w-full">
+            <div class="flex justify-evenly">
+                <p>Balance:
+                    <span id="totalBalance" class="block text-xl"></span>
+                </p>
+                <p>Income:
+                    <span id="totalIncome" class="block text-xl text-green-600"></span>
+                </p>
+                <p>Expense:
+                    <span id="totalExpense" class="block text-xl text-red-600"></span>
+                </p>
+            </div>
+            <div class="flex justify-evenly">
+                <input type="text" id="value" size="30" placeholder="Add value" class="bg-blue-100">
+                <button id="incomeBtn" class="p-2 bg-blue-300">Add income</button>
+                <button id="expenseBtn" class="p-2 bg-blue-300">Add expense</button>
+            </div>
+        </div>
+        <!-- Summary end -->
+        <!-- List start -->
+        <div class="container">
+                <table class="w-full table-auto">
+                    <thead>
+                        <tr class="">
+                            <th class="table-costum">Value</th>
+                            <th class="table-costum">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="itemList">
+                        
+                    </tbody>
+            </table>
+        </div>
+        <!-- List end -->
+    </section>
+    <!-- Hero end -->
+
+<script type="module" src="../module/main.js"></script>
+</body>
+</html>
