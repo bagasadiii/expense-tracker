@@ -13,4 +13,7 @@
     .table-expense {
         @apply bg-red-300;
     }
+    .btn-default {
+        @apply p-2 rounded ease-in-out duration-100 hover:scale-110 active:scale-90
+    }
 }
