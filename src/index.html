@@ -6,46 +6,48 @@
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="h-screen">
     <!-- Header start -->
-    <header class="bg-slate-300 p-3">
+    <header class="bg-slate-300 p-3 h-12">
         Expense Tracker
     </header>
     <!-- Header end -->
     <!-- Hero Start -->
-    <section class="container">
+    <section class="flex flex-col w-full h-s lg:flex-row lg:justify-between lg:h-screen-80">
         <!-- Summary start -->
-        <div class="container w-full">
-            <div class="flex justify-evenly">
-                <p>Balance:
-                    <span id="totalBalance" class="block text-xl"></span>
-                </p>
-                <p>Income:
-                    <span id="totalIncome" class="block text-xl text-green-600"></span>
-                </p>
-                <p>Expense:
-                    <span id="totalExpense" class="block text-xl text-red-600"></span>
-                </p>
-            </div>
-            <div class="flex justify-evenly">
-                <input type="text" id="value" size="30" placeholder="Add value" class="bg-blue-100">
-                <button id="incomeBtn" class="p-2 bg-blue-300">Add income</button>
-                <button id="expenseBtn" class="p-2 bg-blue-300">Add expense</button>
+        <div class="container w-full lg:h-full lg:flex lg:w-1/2 lg:items-center lg:justify-center">
+            <div class="flex flex-col">
+                <div class="flex justify-evenly my-3">
+                    <p>Balance:
+                        <span id="totalBalance" class="block text-xl"></span>
+                    </p>
+                    <p>Income:
+                        <span id="totalIncome" class="block text-xl text-green-600"></span>
+                    </p>
+                    <p>Expense:
+                        <span id="totalExpense" class="block text-xl text-red-600"></span>
+                    </p>
+                </div>
+                <div class="flex justify-evenly my-3">
+                    <input type="text" id="value" size="30" placeholder="Add value" class="bg-blue-100 rounded">
+                    <button id="incomeBtn" class="p-2 bg-blue-300 btn-default">Add income</button>
+                    <button id="expenseBtn" class="p-2 bg-blue-300 btn-default">Add expense</button>
+                </div>
             </div>
         </div>
         <!-- Summary end -->
         <!-- List start -->
-        <div class="container">
-                <table class="w-full table-auto">
-                    <thead>
-                        <tr class="">
-                            <th class="table-costum">Value</th>
-                            <th class="table-costum">Date</th>
-                        </tr>
-                    </thead>
-                    <tbody id="itemList">
+        <div class="w-full lg:h-full lg:w-1/2">
+            <table class="w-full table-auto">
+                <thead>
+                    <tr class="">
+                        <th class="table-costum">Value</th>
+                        <th class="table-costum">Date</th>
+                    </tr>
+                </thead>
+                <tbody id="itemList">
                         
-                    </tbody>
+                </tbody>
             </table>
         </div>
         <!-- List end -->
